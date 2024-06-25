@@ -1,432 +1,309 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
-    <title>Web Design Resources · Code For Us</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Web Design Resources · Code For Us</title>
 
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Code For Us</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="info.html">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="res.html"> Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-      /* .resources-section{
-          border: 2px solid red !important;
-          background-color: red !important;
-          padding: 20px !important;
-          margin: 10px !important;
-          
-      } */
-      
-    </style>
-  </head>
-  <body>
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Code For Us</a>
-      
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="info.html">Information</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="gallery.html">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="res.html"> Resources</a>
-                  </li>
+  <main>
+    <div class="resources-section container py-5">
+      <section class="pb-5 text-center">
+        <h1 class="fw-light">Resources</h1>
+        <p class="lead text-muted">At Code for Us, we are regretfully only able to select a certain number of participants for each workshop. However, we still want to encourage those who cannot join us at this time to check out the following list of free online resources that we have curated:</p>
+      </section>
+
+      <div class="accordion" id="resourcesAccordion">
+        <!-- Resource 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Free Online Courses, Practice, Tutorials
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Explore a variety of free resources offering online courses, practice exercises, and tutorials to enhance your skills in web development and design.</p>
+              <ul>
+                <li><a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a></li>
+                <li><a href="https://www.edx.org" target="_blank">edX</a></li>
+                <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+                <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
+                <li><a href="https://www.udacity.com" target="_blank">Udacity</a></li>
+                <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                <li><a href="https://www.rithmschool.com/courses" target="_blank">Rithm School</a></li>
+                <li><a href="https://wesbos.com/courses/" target="_blank">Wes Bos</a></li>
+                <li><a href="https://www.youtube.com/user/TechGuyWeb" target="_blank">Traversy Media on YouTube</a></li>
+                <li><a href="https://www.leveluptutorials.com/" target="_blank">LevelUpTuts blog</a> on <a href="https://www.youtube.com/user/LevelUpTuts/playlists" target="_blank">YouTube</a></li>
+                <li><a href="http://www.codecademy.com" target="_blank">Code Academy</a></li>
+                <li><a href="http://code.org/" target="_blank">Code.org</a></li>
+                <li><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></li>
+                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a> - The Golden Standard</li>
+                <li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> - Community Question &amp; Answer Forums</li>
+                <li><a href="https://www.smartadvocate.com/News/Blog/software-programming-and-coding-glossary-for-kids" target="_blank">Software Programming and Coding Glossary</a> (not live anymore)</li>
+                <li><a href="https://www.idtech.com/blog/coding-terminology-list" target="_blank">ID Tech Coding Terminology List</a></li>
               </ul>
-              
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
 
-<main>
-  <div class="resources-section">
-
-    <!-- Web Design Resources -->
-
-    <!-- <section>
-        <div class="album py-5 bg-light">
-          <section class="py-5 text-center container">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <h2 class="text-center mb-4">Resources</h2>
-                  <p class="text-center">At Code for Us, we are regretfully only able to select a certain number of participants for each workshop. However, we still want to encourage those who cannot join us at this time to check out the following list of free online resources that we have curated:</p>
-                </div>
-              </div>
+        <!-- Resource 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              JavaScript-Related Tips
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Discover valuable tips and resources to deepen your understanding of JavaScript, covering different versions and best practices for effective coding.</p>
+              <ul>
+                <li><a href="https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c" target="_blank">Learning Different JavaScript Versions</a></li>
+                <li><a href="https://flexiple.com/javascript/javascript-projects/" target="_blank">JavaScript Project Ideas</a></li>
+                <li><a href="https://www.theodinproject.com/lessons/javascript-tips-and-tricks" target="_blank">Tips for writing great JavaScript</a></li>
+              </ul>
             </div>
-          </section> -->
-          
-          <main class="container py-5">
-            <section class="pb-5 text-center">
-              <h1 class="fw-light">Resources</h1>
-              <p class="lead text-muted">At Code for Us, we are regretfully only able to select a certain number of participants for each workshop. However, we still want to encourage those who cannot join us at this time to check out the following list of free online resources that we have curated:</p>
-            </section>
+          </div>
+        </div>
 
+        <!-- Resource 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              CSS Frameworks
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Learn about various CSS frameworks that can help you streamline your web design process, offering pre-designed components and styles for faster development.</p>
+              <ul>
+                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                <li><a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></li>
+                <li><a href="https://foundation.zurb.com/" target="_blank">Foundation</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <!-- Resource 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Front-End Development Tools and Tips
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Explore tools and tips for front-end development, focusing on enhancing your workflow and ensuring the best practices in web development.</p>
+              <ul>
+                <li><a href="https://developers.google.com/web/tools/lighthouse" target="_blank">Google Lighthouse</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">MDN JavaScript Guide</a></li>
+                <li><a href="https://github.com/mbeaudru/modern-js-cheatsheet" target="_blank">Modern JavaScript Cheatsheet</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Free Online Courses, Practice, Tutorials</span></h2>
-        <p class="lead">Explore a variety of free resources offering online courses, practice exercises, and tutorials to enhance your skills in web development and design.</p>
-        <ul>
-          <li><a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a></li>
-          <li><a href="https://www.edx.org" target="_blank">edX</a></li>
-          <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
-          <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
-          <li><a href="https://www.udacity.com" target="_blank">Udacity</a></li>
-          <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
-          <li><a href="https://www.rithmschool.com/courses" target="_blank">Rithm School</a></li>
-          li><a href="https://wesbos.com/courses/" target="_blank">Wes Bos</a></li>
-            <li><a href="https://www.youtube.com/user/TechGuyWeb" target="_blank">Traversy Media on YouTube</a></li>
-            <li><a href="https://www.leveluptutorials.com/" target="_blank">LevelUpTuts blog</a> on <a href="https://www.youtube.com/user/LevelUpTuts/playlists" target="_blank">YouTube</a></li>
-            <li><a href="http://www.codecademy.com" target="_blank">Code Academy</a></li>
-            <li><a href="http://code.org/" target="_blank">Code.org</a></li>
-            <li><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></li>
-            <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a> - The Golden Standard</li>
-            <li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> - Community Question &amp; Answer Forums</li>
-            <li><a href="https://www.smartadvocate.com/News/Blog/software-programming-and-coding-glossary-for-kids" target="_blank">Software Programming and Coding Glossary</a> (not live anymore)</li>
-            <li><a href="https://www.idtech.com/blog/coding-terminology-list" target="_blank">ID Tech Coding Terminology List</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 1">
-      </div>
-    </div>
+        <!-- Resource 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Back-End Development Tools and Tips
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Delve into the world of back-end development with resources and tips that cover server-side programming, database management, and more.</p>
+              <ul>
+                <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
+                <li><a href="https://www.djangoproject.com/" target="_blank">Django</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <!-- Resource 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Version Control
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Understand the importance of version control in software development and explore resources to master tools like Git and GitHub.</p>
+              <ul>
+                <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">JavaScript-Related Tips</span></h2>
-        <p class="lead">Discover valuable tips and resources to deepen your understanding of JavaScript, covering different versions and best practices for effective coding.</p>
-        <ul>
-          <li><a href="https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c" target="_blank">Learning Different JavaScript Versions</a></li>
-          <li><a href="https://www.youtube.com/watch?v=nItSSTwBvSU" target="_blank">What is JavaScript?</a></li>
-          <li><a href="https://stateofjs.com/" target="_blank">The State of JavaScript 2018</a></li>
-          <li><a href="http://jstherightway.org/" target="_blank">JavaScript the Right Way – Guides for Novices</a></li>
-          <li><a href="http://overapi.com/javascript" target="_blank">Overapi – JS</a></li>
-          <li><a href="https://beta.observablehq.com/" target="_blank">Observable</a></li>
-          <li><a href="http://www.howtogeek.com/138865/htg-explains-should-you-disable-javascript/" target="_blank">Disable JS?</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="resource2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 2">
-      </div>
-    </div>
+        <!-- Resource 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              UI/UX Design
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Learn the principles of UI/UX design to create user-friendly interfaces and enhance the overall user experience of your web applications.</p>
+              <ul>
+                <li><a href="https://www.invisionapp.com/" target="_blank">InVision</a></li>
+                <li><a href="https://www.adobe.com/products/xd.html" target="_blank">Adobe XD</a></li>
+                <li><a href="https://uxdesign.cc/" target="_blank">UX Design</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <hr class="featurette-divider">
+        <!-- Resource 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Miscellaneous Tips
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#resourcesAccordion">
+            <div class="accordion-body">
+              <p class="lead">Browse through additional tips and resources covering various aspects of web development to further enhance your skills and knowledge.</p>
+              <ul>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://www.css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://a16z.com/2014/09/17/12-things-about-product-management/" target="_blank">12 Things About Product Management</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Python resources</span></h2>
-        <p class="lead">Access a curated list of resources to kickstart your learning journey in Python, including courses, guides, and specialized tutorials to build your programming skills..</p>
-        <ul>
-          <li><a href="https://www.udacity.com/course/introduction-to-python--ud1110" target="_blank">Udacity – Introduction to Python Programming</a></li>
-            <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank">Python Beginner Guide</a> - Great list of resources</li>
-            <li><a href="https://www.py4e.com/" target="_blank">Python for Everybody</a> - Charles R. Severance is a great Python teacher</li>
-            <li><a href="https://www.coursera.org/specializations/python" target="_blank">Coursera course "Python for Everybody Specialization" taught by Charles R. Severance</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 3">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">LaTex Resources</span></h2>
-        <p class="lead">Access resources and tools for learning and using LaTeX, a typesetting system widely used in academia and technical publishing for creating documents with precision and style.</p>
-        <ul>
-          <li><a href="https://www.latex-project.org/" target="_blank">Latex Official Website</a></li>
-          <li><a href="https://guides.libraries.psu.edu/latex" target="_blank">PSU library latex resources</a></li>
-          <li><a href="https://wch.github.io/latexsheet/" target="_blank">Latex cheat sheet</a></li>
-          <li><a href="https://www.tug.org/begin.html" target="_blank">Getting started with Latex</a></li>
-          <li><a href="https://www.latex-tutorial.com/" target="_blank">Latex tutorials</a></li>
-          <li><a href="https://www.tablesgenerator.com/" target="_blank">Latex table generator</a></li>
-          <li><a href="https://www.brown.edu/academics/science-center/latex/workshop-descriptions" target="_blank">Brown University Workshops</a></li>
-          <li><a href="https://libguides.uakron.edu/latex" target="_blank">University of Akron Library Guides</a></li>
-          <li><a href="https://guides.library.oregonstate.edu/intro_to_latex" target="_blank">Oregon State Library</a></li>
-          <li><a href="https://cds.library.nd.edu/workshops/resources/documents/tex-course.pdf" target="_blank">Notre Dame library resources</a></li>
-          <li><a href="https://courses.cs.washington.edu/courses/cse311/17sp/latex/slides.pdf" target="_blank">Latex Slides from Washington CS</a></li>
-          <li><a href="https://data.library.virginia.edu/training/past-workshops/" target="_blank">Virginia Library Workshops</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="resource4.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 4">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Enhancing your Website</span></h2>
-        <p class="lead">Enhance your website's visual appeal with tools and resources for choosing fonts, colors, and using image editors and filler text.
-          .</p>
-        <ul>
-          <li><a href="https://fonts.google.com/" target="_blank">Google Fonts Typography</a></li>
-          <li><a href="https://kuler.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler: Color Wheel, Palettes for Web Design</a></li>
-          <li><a href="https://pixlr.com/editor/" target="_blank">Free Image Editor</a></li>
-          <li><a href="http://generator.lorem-ipsum.info/" target="_blank">Lorem Ipsum – Filler Text for Websites</a></li>
-          <li><a href="http://www.colors.commutercreative.com/" target="_blank">Find Color Names for CSS</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource5.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 5">
       </div>
     </div>
+  </main>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Domain and Web Hosting</span></h2>
-        <p class="lead">Explore various options for domain registration and web hosting services to establish your online presence effectively..</p>
-        <ul>
-          <li><a href="https://www.domcomp.com/" target="_blank">Domain Name Comparison Pricing</a></li>
-          <li><a href="https://www.domain.com/" target="_blank">Domain Hosting</a></li>
-          <li><a href="http://www.godaddy.com/" target="_blank">Go Daddy</a></li>
-          <li><a href="https://www.ipage.com/ipage/index.html" target="_blank">iPage (paid)</a></li>
-          <li><a href="http://www.hostgator.com/" target="_blank">Host Gator (paid)</a></li>
-          <li><a href="https://wordpress.com/" target="_blank">WordPress</a> - blog and web platform (free or paid)</li>
-          <li><a href="https://sites.google.com" target="_blank">Google Sites</a> - free</li>
-          <li><a href="https://www.squarespace.com/" target="_blank">Square Space</a> - free trial or paid</li>
-          <li><a href="http://www.wix.com/" target="_blank">Wix</a> - free to build and domain</li>
-          <li><a href="http://www.weebly.com/" target="_blank">Weebly</a> - free</li>
-          <li><a href="https://thimble.mozilla.org/en-US/" target="_blank">Mozilla Webmaker Thimble (Glitch instead)</a> - free</li>
-          <li><a href="https://personal.psu.edu" target="_blank">Personal PSU portfolio</a> - Our past intern Katie O’Leary created slides to move through this process</li>
-          <li><a href="https://sites.psu.edu" target="_blank">Sites at PSU hosting by WordPress</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource6.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 6">
-      </div>
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Code For Us &copy; 2024 Company, Inc.</p>
     </div>
+  </footer>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Live Testing</span></h2>
-        <p class="lead">Test your web projects in real-time across different browsers and devices using live testing tools for optimal performance..</p>
-        <ul>
-          <li><a href="https://browsersync.io/" target="_blank">Browser Sync</a></li>
-          <li><a href="https://caniuse.com/" target="_blank">Can I use?</a> - This website tells you which features and elements from languages work on each browser type</li>
-          <li><a href="https://validator.w3.org/" target="_blank">W3c Markup Validator</a> - This website tells you whether your HTML Markup is valid and in compliance with standards from the W3C who govern HTML</li>
-          <li><a href="https://jsfiddle.net/" target="_blank">JS fiddle</a> - In Web Browser testing</li>
-          <li><a href="https://codepen.io/" target="_blank">Code Pen</a> - Social Community share, review, fork user projects</li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource7.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 7">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Accessibility</span></h2>
-        <p class="lead">Ensure your websites are accessible to all users with tools and resources that help you understand and implement web accessibility standards effectively.</p>
-        <ul>
-          <li><a href="https://wave.webaim.org/extension/" target="_blank">WAVE</a> - a Chrome and Firefox extension that is very helpful when checking the accessibility of a webpage</li>
-            <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM color contrast checker</a> - Check if your foreground and background colors pass web standards for readability</li>
-            <li><a href="https://accessibility.psu.edu/webpagetools/" target="_blank">Penn State’s Accessibility website</a></li>
-            <li><a href="https://sites.psu.edu/accessibilityusers/resources/" target="_blank">Penn State’s Accessibility Users Group</a></li>
-            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank">W3C - Introduction to Web Accessibility</a></li>
-            <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank">W3C - Accessibility Checklist</a></li>
-            <li><a href="https://www.deque.com/" target="_blank">Deque</a> - training, resources, and great information about accessibility</li>
-            <li><a href="https://www.deque.com/axe/" target="_blank">AXE</a> - Chrome or Firefox extension from Deque</li>
-            <li><a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference" target="_blank">Dev Tools</a> - how to check accessibility</li>
-            <li><a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Lighthouse</a> - Accessibility audit tool and more</li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource8.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 8">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Prototyping and Mock-up Tools</span></h2>
-        <p class="lead">Utilize tools for creating prototypes and mockups that help visualize and refine web design ideas efficiently.</p>
-        <ul>
-          <li><a href="https://adobe.psu.edu/" target="_blank">Adobe Creative Cloud</a> (login with PSU account) - Adobe XD (XD is free for everyone), Photoshop, Illustrator, Adobe Spark, Adobe Premiere Rush, and much more.</li>
-          <li><a href="https://www.invisionapp.com/" target="_blank">Invision</a></li>
-          <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
-          <li><a href="https://www.sketch.com/" target="_blank">Sketch</a></li>
-          <li><a href="https://balsamiq.com/" target="_blank">Balsamiq</a></li>
-          <li><a href="https://www.mockflow.com/" target="_blank">Mockflow</a></li>
-          <li><a href="https://www.axure.com/" target="_blank">Axure Rp</a></li>
-          <li><a href="https://xtensio.com/" target="_blank">Xtensio</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource9.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 9">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Blogs and Books for Tutorials/Help </span></h2>
-        <p class="lead">Access valuable resources including blogs and books that offer tutorials and insights into web design and development practices.</p>
-        <ul>
-          <li><a href="https://jsbooks.revolunet.com/" target="_blank">Free JavaScript Books</a></li>
-          <li><a href="http://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
-          <li><a href="https://usabilitygeek.com/" target="_blank">Usability Geek Blog</a></li>
-          <li><a href="http://www.webhostingsecretrevealed.net/blog/web-design/20-best-personal-websites-in-2013/" target="_blank">Other site examples</a></li>
-          <li><a href="https://alistapart.com/" target="_blank">A list Apart</a> - Articles and Content About the Web</li>
-          <li><a href="https://dribbble.com/" target="_blank">Dribbble</a> - Designers Community for Inspiration and Feedback</li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource10.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 10">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Talks, Podcasts, and Inspiration</span></h2>
-        <p class="lead">Discover inspiring talks and podcasts that explore the latest trends in web technology and coding practices. </p>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=NLlGopyXT_g" target="_blank">Web 2.0 (Ever-evolving Web)</a></li>
-          <li><a href="http://www.bbc.com/news/business-17931814" target="_blank">HTML5 future</a></li>
-          <li><a href="https://youtu.be/HVnXJf9_tTM" target="_blank">I design with code | Shannon Wiedman | TEDxUMary</a></li>
-          <li><a href="https://youtu.be/FpMNs7H24X0" target="_blank">Ted Talk from Partovi founder of Code.org</a></li>
-          <li><a href="https://www.youtube.com/watch?v=-jRREn6ifEQ" target="_blank">The poetry of programming | Linda Liukas | TEDxCERN</a></li>
-          <li><a href="https://www.youtube.com/watch?v=GqgTwkTP6PM" target="_blank">The Art of Code | Zach Latta | TEDxYouth@Tallinn</a></li>
-          <li><a href="https://syntax.fm/" target="_blank">Syntax</a></li>
-          <li><a href="https://dev.to/jsjabber" target="_blank">JavaScript Jabber</a></li>
-          <li><a href="https://developertea.simplecast.fm/" target="_blank">Developer Tea</a></li>
-          <li><a href="https://www.codenewbie.org/podcast/" target="_blank">CodeNewbie</a></li>
-          <li><a href="https://soundcloud.com/starthere-webdev" target="_blank">Start Here: Web Development</a></li>
-          <li><a href="https://learntocodewith.me/podcast/" target="_blank">Learn to Code with Me</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource11.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 11">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Other Fun Stuff</span></h2>
-        <p class="lead">Explore interactive tools and entertaining websites related to web design and digital creativity.</p>
-        <ul>
-          <li><a href="https://archive.org/web/" target="_blank">Wayback Machine – This project captures snapshots of websites on the internet over periods of time</a></li>
-          <li><a href="https://theuselessweb.com/" target="_blank">The Useless Web</a></li>
-          <li><a href="https://www.gridcritters.com/" target="_blank">Grid Critters CSS game!</a></li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <img src="resource12.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Resource 12">
-      </div>
-    </div>
-
-  </div><!-- /.container -->
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
