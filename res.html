@@ -1,309 +1,347 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.122.0">
-  <title>Web Design Resources · Code For Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Web Design Resources · Code For Us</title>
 
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
 
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
 
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
 
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
 
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
 
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
 
-    .bd-mode-toggle .dropdown-menu .active .bi {
-      display: block !important;
-    }
-  </style>
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
 </head>
+
 <body>
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Code For Us</a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="info.html">Information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="res.html"> Resources</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="resources-section container py-5">
-      <section class="pb-5 text-center">
-        <h1 class="fw-light">Resources</h1>
-        <p class="lead text-muted">At Code for Us, we are regretfully only able to select a certain number of participants for each workshop. However, we still want to encourage those who cannot join us at this time to check out the following list of free online resources that we have curated:</p>
-      </section>
-
-      <div class="accordion" id="resourcesAccordion">
-        <!-- Resource 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Free Online Courses, Practice, Tutorials
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Explore a variety of free resources offering online courses, practice exercises, and tutorials to enhance your skills in web development and design.</p>
-              <ul>
-                <li><a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a></li>
-                <li><a href="https://www.edx.org" target="_blank">edX</a></li>
-                <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
-                <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
-                <li><a href="https://www.udacity.com" target="_blank">Udacity</a></li>
-                <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
-                <li><a href="https://www.rithmschool.com/courses" target="_blank">Rithm School</a></li>
-                <li><a href="https://wesbos.com/courses/" target="_blank">Wes Bos</a></li>
-                <li><a href="https://www.youtube.com/user/TechGuyWeb" target="_blank">Traversy Media on YouTube</a></li>
-                <li><a href="https://www.leveluptutorials.com/" target="_blank">LevelUpTuts blog</a> on <a href="https://www.youtube.com/user/LevelUpTuts/playlists" target="_blank">YouTube</a></li>
-                <li><a href="http://www.codecademy.com" target="_blank">Code Academy</a></li>
-                <li><a href="http://code.org/" target="_blank">Code.org</a></li>
-                <li><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></li>
-                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a> - The Golden Standard</li>
-                <li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> - Community Question &amp; Answer Forums</li>
-                <li><a href="https://www.smartadvocate.com/News/Blog/software-programming-and-coding-glossary-for-kids" target="_blank">Software Programming and Coding Glossary</a> (not live anymore)</li>
-                <li><a href="https://www.idtech.com/blog/coding-terminology-list" target="_blank">ID Tech Coding Terminology List</a></li>
-              </ul>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Code For Us</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="info.html">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="res.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="work.html">Workshop Materials</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Resource 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              JavaScript-Related Tips
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Discover valuable tips and resources to deepen your understanding of JavaScript, covering different versions and best practices for effective coding.</p>
-              <ul>
-                <li><a href="https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c" target="_blank">Learning Different JavaScript Versions</a></li>
-                <li><a href="https://flexiple.com/javascript/javascript-projects/" target="_blank">JavaScript Project Ideas</a></li>
-                <li><a href="https://www.theodinproject.com/lessons/javascript-tips-and-tricks" target="_blank">Tips for writing great JavaScript</a></li>
-              </ul>
+    <main>
+        <div class="resources-section container py-5">
+            <section class="pb-5 text-center">
+                <h1 class="fw-light">Resources</h1>
+                <p class="lead text-muted">At Code for Us, we are regretfully only able to select a certain number of participants for each workshop. However, we still want to encourage those who cannot join us at this time to check out the following list of free online resources that we have curated:</p>
+            </section>
+
+            <div class="accordion" id="resourcesAccordion">
+                <!-- Resource 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Free Online Courses, Practice, Tutorials
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
+                        <div class="accordion-body">
+                            <p class="lead">Explore a variety of free resources offering online courses, practice exercises, and tutorials to enhance your skills in web development and design.</p>
+                            <ul>
+                                <li><a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a></li>
+                                <li><a href="https://www.edx.org" target="_blank">edX</a></li>
+                                <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+                                <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a></li>
+                                <li><a href="https://www.udacity.com" target="_blank">Udacity</a></li>
+                                <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                                <li><a href="https://www.rithmschool.com/courses" target="_blank">Rithm School</a></li>
+                                <li><a href="https://wesbos.com/courses/" target="_blank">Wes Bos</a></li>
+                                <li><a href="https://www.youtube.com/user/TechGuyWeb" target="_blank">Traversy Media on YouTube</a></li>
+                                <li><a href="https://www.leveluptutorials.com/" target="_blank">LevelUpTuts blog</a> on <a href="https://www.youtube.com/user/LevelUpTuts/playlists" target="_blank">YouTube</a></li>
+                                <li><a href="http://www.codecademy.com" target="_blank">Code Academy</a></li>
+                                <li><a href="http://code.org/" target="_blank">Code.org</a></li>
+                                <li><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></li>
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a> - The Golden Standard</li>
+                                <li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> - Community Question &amp; Answer Forums</li>
+                                <li><a href="https://www.smartadvocate.com/News/Blog/software-programming-and-coding-glossary-for-kids" target="_blank">Software Programming and Coding Glossary</a> (not live anymore)</li>
+                                <li><a href="https://www.idtech.com/blog/coding-terminology-list" target="_blank">ID Tech Coding Terminology List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            JavaScript-Related Tips
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
+                        <div class="accordion-body">
+                            <p class="lead">Discover valuable tips and resources to deepen your understanding of JavaScript, covering different versions and best practices for effective coding.</p>
+                            <ul>
+                                <li><a href="https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c" target="_blank">Learning Different Versions of JavaScript - ES6, ES8, ES2017, ECMAScript</a></li>
+                                <li><a href="https://medium.com/javascript-scene" target="_blank">JavaScript Scene</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+                                <li><a href="https://www.javascript.com/resources" target="_blank">JavaScript.com Resources</a></li>
+                                <li><a href="https://flaviocopes.com" target="_blank">Flavio Copes</a></li>
+                                <li><a href="https://www.digitalocean.com/community/tutorials" target="_blank">DigitalOcean Tutorials</a></li>
+                                <li><a href="https://egghead.io" target="_blank">Egghead.io</a></li>
+                                <li><a href="https://frontendmasters.com" target="_blank">Frontend Masters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Live Testing Section -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingLiveTesting">
+                    <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLiveTesting" aria-expanded="false" aria-controls="collapseLiveTesting">
+                      Live Testing
+                    </button>
+                  </h2>
+                  <div id="collapseLiveTesting" class="accordion-collapse collapse" aria-labelledby="headingLiveTesting" data-bs-parent="#resourcesAccordion">
+                    <div class="accordion-body">
+                      <p class="lead">These tools help you test and validate your web projects live, ensuring they work across different browsers and platforms.</p>
+                      <ul>
+                        <li><a href="https://browsersync.io/" target="_blank">Browser Sync</a></li>
+                        <li><a href="https://caniuse.com/" target="_blank">Can I use?</a> - This website tells you which features and elements from languages work on each browser type</li>
+                        <li><a href="https://validator.w3.org/" target="_blank">W3C Markup Validator</a> - This website tells you whether your HTML Markup is valid and in compliance with standards from the W3C who govern HTML</li>
+                        <li><a href="https://jsfiddle.net/" target="_blank">JS Fiddle</a> - In Web Browser testing</li>
+                        <li><a href="https://codepen.io/" target="_blank">Code Pen</a> - Social Community share, review, fork user projects</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                    
+                <!-- Latex Resources Section -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingLatex">
+                    <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLatex" aria-expanded="false" aria-controls="collapseLatex">
+                      Latex Resources
+                    </button>
+                  </h2>
+                  <div id="collapseLatex" class="accordion-collapse collapse" aria-labelledby="headingLatex" data-bs-parent="#resourcesAccordion">
+                    <div class="accordion-body">
+                      <p class="lead">Around Penn State such as in the College of IST and other hard science disciplines, faculty and graduate students have been using Latex to write their theses and dissertations, to create their CVs, and to construct their publications to venues such as conferences and journals. (ACM and IEEE have created their own templates to make it easy on authors)</p>
+                      <p>Code for Her offered a Beginners Latex Workshop. Captured below are some resources for learning Latex.</p>
+                      <ul>
+                        <li><a href="https://www.latex-project.org/" target="_blank">Latex Official Website</a></li>
+                        <li><a href="https://guides.libraries.psu.edu/latex" target="_blank">PSU library latex resources</a></li>
+                        <li><a href="https://wch.github.io/latexsheet/" target="_blank">Latex cheat sheet</a></li>
+                        <li><a href="https://www.tug.org/begin.html" target="_blank">Getting started with Latex</a></li>
+                        <li><a href="https://www.latex-tutorial.com/" target="_blank">Latex tutorials</a></li>
+                        <li><a href="https://www.tablesgenerator.com/" target="_blank">Latex table generator</a></li>
+                        <li><a href="https://www.brown.edu/academics/science-center/latex/workshop-descriptions" target="_blank">Brown University Workshops</a></li>
+                        <li><a href="https://libguides.uakron.edu/latex" target="_blank">University of Akron Library Guides</a></li>
+                        <li><a href="https://guides.library.oregonstate.edu/intro_to_latex" target="_blank">Oregon State Library</a></li>
+                        <li><a href="https://cds.library.nd.edu/workshops/resources/documents/tex-course.pdf" target="_blank">Notre Dame library resources</a></li>
+                        <li><a href="https://courses.cs.washington.edu/courses/cse311/17sp/latex/slides.pdf" target="_blank">Latex Slides from Washington CS</a></li>
+                        <li><a href="https://data.library.virginia.edu/training/past-workshops/" target="_blank">Virginia Library Workshops</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                   <!-- Python Resources Section -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingPython">
+                    <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePython" aria-expanded="false" aria-controls="collapsePython">
+                      Python Resources
+                    </button>
+                  </h2>
+                  <div id="collapsePython" class="accordion-collapse collapse" aria-labelledby="headingPython" data-bs-parent="#resourcesAccordion">
+                    <div class="accordion-body">
+                      <p class="lead">Code for Her does not teach Python at the workshop, but we get a lot of people interested in learning. Here are some resources to get you started:</p>
+                      <ul>
+                        <li><a href="https://www.udacity.com/course/introduction-to-python--ud1110" target="_blank">Udacity &#8211; Introduction to Python Programming</a></li>
+                        <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank">Python Beginner Guide</a> - Great list of resources</li>
+                        <li><a href="https://www.py4e.com/" target="_blank">Python for Everybody</a> - Charles R. Severance is a great Python teacher</li>
+                        <li><a href="https://www.coursera.org/specializations/python" target="_blank">Coursera course &#8220;Python for Everybody Specialization&#8221;</a> - Taught by Charles R. Severance</li>
+                      </ul>
+                      <p>Also check out the tab above &#8220;Free Online Courses, Practice, Tutorials&#8221; many of those resources also have Python materials.</p>
+                    </div>
+                  </div>
+                </div>
+                  
+                <!-- CSS Frameworks Section -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      CSS Frameworks
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+                    <div class="accordion-body">
+                      <p class="lead">Learn about various CSS frameworks that can help you streamline your web design process, offering pre-designed components and styles for faster development.</p>
+                      <ul>
+                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                        <li><a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></li>
+                        <li><a href="https://foundation.zurb.com/" target="_blank">Foundation</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                   <!-- Domain and Web Hosting Section -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingDomain">
+                    <button class="accordion-button collapsed custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDomain" aria-expanded="false" aria-controls="collapseDomain">
+                      Domain and Web Hosting
+                    </button>
+                  </h2>
+                  <div id="collapseDomain" class="accordion-collapse collapse" aria-labelledby="headingDomain" data-bs-parent="#resourcesAccordion">
+                    <div class="accordion-body">
+                      <p class="lead">Find the right domain and web hosting service to get your website online, whether you're looking for free options or paid solutions.</p>
+                      <ul>
+                        <li><a href="https://www.domcomp.com/" target="_blank">Domain Name Comparison Pricing</a></li>
+                        <li><a href="https://www.domain.com/" target="_blank">Domain Hosting</a></li>
+                        <li><a href="http://www.godaddy.com/" target="_blank">Go Daddy</a></li>
+                        <li><a href="https://www.ipage.com/ipage/index.html" target="_blank">iPage (paid)</a></li>
+                        <li><a href="http://www.hostgator.com/" target="_blank">Host Gator (paid)</a></li>
+                        <li><a href="https://wordpress.com/" target="_blank">WordPress-blog and web platform (free or paid)</a></li>
+                        <li><a href="https://sites.google.com" target="_blank">Google Sites (free)</a></li>
+                        <li><a href="https://www.squarespace.com/" target="_blank">Square Space (free trial or paid)</a></li>
+                        <li><a href="http://www.wix.com/" target="_blank">Wix (free to build and domain)</a></li>
+                        <li><a href="http://www.weebly.com/" target="_blank">Weebly (free)</a></li>
+                        <li><a href="https://thimble.mozilla.org/en-US/" target="_blank">Mozilla Webmaker Thimble (free) (Glitch instead)</a></li>
+                        <li><a href="http://personal.psu.edu" target="_blank">Personal PSU portfolio &#8211; Our past intern Katie O&#8217;Leary created slides to move through this process</a></li>
+                        <li><a href="http://sites.psu.edu" target="_blank">Sites at PSU hosting by WordPress</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Resource 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            CSS3 / HTML5 Tutorials &amp; Practice
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+                        <div class="accordion-body">
+                            <p class="lead">Access a range of tutorials and exercises designed to improve your skills in CSS3 and HTML5, essential for modern web design and development.</p>
+                            <ul>
+                                <li><a href="http://tympanus.net/codrops/" target="_blank">Codrops</a></li>
+                                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                <li><a href="https://www.html5rocks.com/en/" target="_blank">HTML5 Rocks</a></li>
+                                <li><a href="https://www.cssportal.com/css3-generator/" target="_blank">CSS3 Generator</a></li>
+                                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a></li>
+                                <li><a href="https://web.dev/learn/css/" target="_blank">web.dev - Learn CSS</a></li>
+                                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </main>
 
-        <!-- Resource 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              CSS Frameworks
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Learn about various CSS frameworks that can help you streamline your web design process, offering pre-designed components and styles for faster development.</p>
-              <ul>
-                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-                <li><a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></li>
-                <li><a href="https://foundation.zurb.com/" target="_blank">Foundation</a></li>
-              </ul>
-            </div>
-          </div>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">&copy; 2024 Code For Us. All rights reserved.</p>
         </div>
+    </footer>
 
-        <!-- Resource 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Front-End Development Tools and Tips
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Explore tools and tips for front-end development, focusing on enhancing your workflow and ensuring the best practices in web development.</p>
-              <ul>
-                <li><a href="https://developers.google.com/web/tools/lighthouse" target="_blank">Google Lighthouse</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">MDN JavaScript Guide</a></li>
-                <li><a href="https://github.com/mbeaudru/modern-js-cheatsheet" target="_blank">Modern JavaScript Cheatsheet</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Resource 5 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Back-End Development Tools and Tips
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Delve into the world of back-end development with resources and tips that cover server-side programming, database management, and more.</p>
-              <ul>
-                <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
-                <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
-                <li><a href="https://www.djangoproject.com/" target="_blank">Django</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Resource 6 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Version Control
-            </button>
-          </h2>
-          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Understand the importance of version control in software development and explore resources to master tools like Git and GitHub.</p>
-              <ul>
-                <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
-                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-                <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Resource 7 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              UI/UX Design
-            </button>
-          </h2>
-          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Learn the principles of UI/UX design to create user-friendly interfaces and enhance the overall user experience of your web applications.</p>
-              <ul>
-                <li><a href="https://www.invisionapp.com/" target="_blank">InVision</a></li>
-                <li><a href="https://www.adobe.com/products/xd.html" target="_blank">Adobe XD</a></li>
-                <li><a href="https://uxdesign.cc/" target="_blank">UX Design</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Resource 8 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              Miscellaneous Tips
-            </button>
-          </h2>
-          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#resourcesAccordion">
-            <div class="accordion-body">
-              <p class="lead">Browse through additional tips and resources covering various aspects of web development to further enhance your skills and knowledge.</p>
-              <ul>
-                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-                <li><a href="https://www.css-tricks.com/" target="_blank">CSS-Tricks</a></li>
-                <li><a href="https://a16z.com/2014/09/17/12-things-about-product-management/" target="_blank">12 Things About Product Management</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="text-body-secondary py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1">Code For Us &copy; 2024 Company, Inc.</p>
-    </div>
-  </footer>
-
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

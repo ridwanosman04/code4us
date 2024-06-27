@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Code For Us">
+    <title>Workshop Materials · Code For Us</title>
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Code For Us</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="info.html">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="res.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="work.html">Workshop Materials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <section class="pb-5 text-center">
+                <h1 class="fw-light">Workshop Materials</h1>
+                <p class="lead text-muted">We will post the materials we use in workshop weekly here. They are not a supplement for the workshop itself, but rather to allow participants to look back on any material we covered as they might need.</p>
+            </section>
+
+            <div class="accordion" id="materialsAccordion">
+                <!-- Week 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek1" aria-expanded="true" aria-controls="collapseWeek1">
+                            Week 1: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek1" class="accordion-collapse collapse show" aria-labelledby="headingWeek1" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek2" aria-expanded="false" aria-controls="collapseWeek2">
+                            Week 2: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek2" class="accordion-collapse collapse" aria-labelledby="headingWeek2" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek3" aria-expanded="false" aria-controls="collapseWeek3">
+                            Week 3: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek3" class="accordion-collapse collapse" aria-labelledby="headingWeek3" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek4" aria-expanded="false" aria-controls="collapseWeek4">
+                            Week 4: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek4" class="accordion-collapse collapse" aria-labelledby="headingWeek4" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek5" aria-expanded="false" aria-controls="collapseWeek5">
+                            Week 5: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek5" class="accordion-collapse collapse" aria-labelledby="headingWeek5" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek6" aria-expanded="false" aria-controls="collapseWeek6">
+                            Week 6: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek6" class="accordion-collapse collapse" aria-labelledby="headingWeek6" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek7" aria-expanded="false" aria-controls="collapseWeek7">
+                            Week 7: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek7" class="accordion-collapse collapse" aria-labelledby="headingWeek7" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingWeek8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeek8" aria-expanded="false" aria-controls="collapseWeek8">
+                            Week 8: Lorem Ipsum
+                        </button>
+                    </h2>
+                    <div id="collapseWeek8" class="accordion-collapse collapse" aria-labelledby="headingWeek8" data-bs-parent="#materialsAccordion">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-outline-primary me-2">Slides</button>
+                            <button type="button" class="btn btn-outline-secondary">Files</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">&copy; 2024 Code For Us. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
