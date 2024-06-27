@@ -1,216 +1,213 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
-    <title>Code For Us</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Code For Us</title>
 
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
-  </head>
-  <body>
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Code For Us</a>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="info.html">Information</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" href="gallery.html">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" href="res.html">Resources</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" href="work.html">Workshop Materials</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-  </header>
-<main>
-  
-  <!-- Workshop Section -->
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Join our  Workshops</h1>
-        <p class="lead text-muted">Unlock your creative potential with our web design workshops. Limited seats available!</p>
-        <p>Get ready to boost your skills in our accessible workshops. Apply now to secure your spot.</p>
-        <button type="button" class="btn btn-primary my-2"><a href="https://forms.gle/YnjvxqWSdC6c7F247" class="btn btn-primary my-2"  style="text-decoration: none;">Apply Now</a></button>
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Code For Us</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="info.html">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="res.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="work.html">Workshop Materials</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-
-
-
- <section>
-  <div class="album py-5 bg-light">
+    </nav>
+  </header>
+  <main>
+    <!-- Workshop Section -->
     <section class="py-5 text-center container">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="text-center mb-4">Our Mission</h2>
-            <p class="text-center">The Code for Us workshop series invites adults in the Twin Cities with little to no tech experience to embark on a journey where they will be introduced to basic web development skills. Code for Us recognizes there is a lack of computing opportunities that center adult learners, especially for BIPOC and LGBTQ+ individuals. Code for Us is guided by principles of equity and access coupled with the values of libraries as pillars for community-based and lifelong learning. Regardless of your background or experience in tech, everyone deserves to learn computing skills at any stage in life. As a result, Code for Us is dedicated to creating an accessible community-centered space with an informal learning lens for participants to discover and engage with computing. Our hope is that adult learners join us in creating a more diverse and inclusive tech workforce.</p>
-          </div>
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Join our Workshops</h1>
+          <p class="lead text-muted">Unlock your creative potential with our web design workshops. Limited seats available!</p>
+          <p>Get ready to boost your skills in our accessible workshops. Apply now to secure your spot.</p>
+          <a href="https://forms.gle/YnjvxqWSdC6c7F247" class="btn btn-primary my-2" style="text-decoration: none;">Apply Now</a>
         </div>
       </div>
     </section>
 
-  <!-- Workshop Details Section -->
-<section class="py-5 text-left container">
-  <h2 class="text-center mb-4">Workshop Details</h2>
-  <div class="row justify-content-center align-items-center">
-    <div class="col-lg-4">
-      <a href="Code.png" download>
-        <img src="Code.png" class="img-fluid" alt="Workshop Poster">
-      </a>
-    </div>
-    
-    <div class="col-lg-8">
-      <ul class="text-left">
-        <li>Hosted at Rondo Community Library</li>
-        <li>Free Entry</li>
-        <li>8-week workshop series</li>
-        <li>Adults age 35+ encouraged</li>
-        <li>BIPOC & LGBTQ+ individuals encouraged</li>
-        <li>Accepting applications until September 1st</li>
-        <li>No prior experience necessary or wanted</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section>
+      <div class="album py-5 bg-light">
+        <section class="py-5 text-center container">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 class="text-center mb-4">Our Mission</h2>
+                <p class="text-center">The Code for Us workshop series invites adults in the Twin Cities with little to no tech experience to embark on a journey where they will be introduced to basic web development skills. Code for Us recognizes there is a lack of computing opportunities that center adult learners, especially for BIPOC and LGBTQ+ individuals. Code for Us is guided by principles of equity and access coupled with the values of libraries as pillars for community-based and lifelong learning. Regardless of your background or experience in tech, everyone deserves to learn computing skills at any stage in life. As a result, Code for Us is dedicated to creating an accessible community-centered space with an informal learning lens for participants to discover and engage with computing. Our hope is that adult learners join us in creating a more diverse and inclusive tech workforce.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <!-- Featured Section -->
-<section>
-  <div class="container marketing">
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="question.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Questions">
-        <h2>Questions</h2>
-        <p>Contact us at <a href="mailto:codeforus@macalester.edu">codeforus@macalester.edu</a></p>
+        <!-- Workshop Details Section -->
+        <section class="py-5 text-left container">
+          <h2 class="text-center mb-4">Workshop Details</h2>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4">
+              <a href="Code.png" download>
+                <img src="Code.png" class="img-fluid" alt="Workshop Poster">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <ul class="text-left">
+                <li>Hosted at Rondo Community Library</li>
+                <li>Free Entry</li>
+                <li>8-week workshop series</li>
+                <li>Adults age 35+ encouraged</li>
+                <li>BIPOC & LGBTQ+ individuals encouraged</li>
+                <li>Accepting applications until September 1st</li>
+                <li>No prior experience necessary or wanted</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section>
+          <div class="container marketing">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="question.png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Questions">
+                <h2>Questions</h2>
+                <p>Contact us at <a href="mailto:codeforus@macalester.edu">codeforus@macalester.edu</a></p>
+              </div>
+              <div class="col-lg-4">
+                <img src="code2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Previous Work">
+                <h2>Look at Our Alumni's Work</h2>
+                <p>See all our past participants' projects, and see your own!</p>
+                <p><a class="btn btn-secondary" href="gallery.html">Click Here »</a></p>
+              </div>
+              <div class="col-lg-4">
+                <img src="res.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Resources">
+                <h2>Resources</h2>
+                <p>Look at some resources to reinforce your learning and maybe even explore some other skills!</p>
+                <p><a class="btn btn-secondary" href="res.html">View Resources »</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="container py-5">
+          <p class="mt-4">Researchers at Macalester College are conducting this workshop in order to better understand effective strategies in computing education for adults in an informal learning space. Macalester College IRB has determined that this research is exempt from ongoing IRB oversight. Approval #23045</p>
+
+          <div class="row">
+            <div class="col-12 col-md">
+              <svg class="bi" width="24" height="24"><use xlink:href="#bootstrap"/></svg>
+              <small class="d-block mb-3 text-muted">&copy; 2024–2025</small>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div class="col-lg-4">
-        <img src="code2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Previous Work">
+    </section>
+  </main>
 
-        <h2>Look at Our Alumni's Work</h2>
-        <p>See all our past participants' projects, and see your own!</p>
-        <p><a class="btn btn-secondary" href="gallery.html">Click Here »</a></p>
-      </div>
-      <div class="col-lg-4">
-        <img src="res.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Resources">
-        <h2>Resources</h2>
-        <p>Look at some resources to reinforce your learning and maybe even explore some other skills!</p>
-        <p><a class="btn btn-secondary" href="res.html">View Resources »</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Footer -->
-  <footer class="container py-5">
-    <p class="mt-4">Researchers at Macalester College are conducting this workshop in order to better understand effective strategies in computing education for adults in an informal learning space. Macalester College IRB has determined that this research is exempt from ongoing IRB oversight. Approval #23045</p>
-
-    <div class="row">
-      <div class="col-12 col-md">
-        <svg class="bi" width="24" height="24"><use xlink:href="#bootstrap"/></svg>
-        <small class="d-block mb-3 text-muted">&copy; 2024–2025</small>
-    
-</main>
-
-<script src="bootstrap5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-  
-
